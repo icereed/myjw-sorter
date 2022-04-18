@@ -26,8 +26,6 @@ func main() {
 }
 
 func extractDate(filename string) (time.Time, error) {
-	// panic if regexp invalid
-	// if regexp matches
 	date, err := tryExtractYYYYMMDD(filename)
 	if err == nil {
 		return date, nil
